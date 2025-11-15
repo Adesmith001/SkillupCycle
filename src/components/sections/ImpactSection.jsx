@@ -114,7 +114,7 @@ export const ImpactSection = () => {
               Creating Lasting Change
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed">
-              By aligning with SDGs 4 and 8, SkillUpCycle doesn't just teach skills—we 
+              By aligning with SDGs 4 and 8, SkillUpCycle doesn't just teach skills, we 
               build pathways to dignified employment, economic empowerment, and 
               sustainable community development across rural Nigeria.
             </p>

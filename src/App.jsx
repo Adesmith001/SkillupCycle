@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="min-h-screen overflow-x-hidden">
       <Header />
-      <main className="pt-20">
+      <main className="pt-10 lg:pt-15">
         <HeroSection />
         <ProblemSection />
         <SolutionSection />

@@ -56,7 +56,7 @@ export const VisionSection = () => {
           </p>
 
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-            SkillUpCycle is more than a platform—it's a launchpad for dreams, 
+            SkillUpCycle is more than a platform, it's a launchpad for dreams, 
             a catalyst for change, and a beacon of hope for Nigeria's youth.
           </p>
         </ScaleIn>
@@ -103,7 +103,7 @@ export const VisionSection = () => {
         >
           <div className="inline-block bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 md:p-12 max-w-4xl">
             <p className="text-2xl md:text-3xl font-display font-bold text-white leading-relaxed">
-              We're not just teaching skills—we're nurturing leaders, 
+              We're not just teaching skills, we're nurturing leaders, 
               empowering innovators, and shaping the future of Nigeria, 
               one young person at a time.
             </p>

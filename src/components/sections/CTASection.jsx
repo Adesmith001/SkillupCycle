@@ -112,15 +112,15 @@ export const CTASection = () => {
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Enter your email"
                       required
-                      className="w-full pl-12 pr-4 py-4 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-400"
+                      className="w-full pl-5 pr-4 py-4 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-400"
                     />
                   </div>
                   <Button
                     type="submit"
-                    size="lg"
-                    className="bg-white text-primary-600 hover:bg-gray-100"
+                    size="sm"
+                    className="bg-white text-primary-600 hover:bg-gray-100 flex items-center gap-2"
                   >
-                    <Send className="mr-2" size={20} />
+                    <Send size={20} />
                     Join Waitlist
                   </Button>
                 </div>
@@ -139,22 +139,7 @@ export const CTASection = () => {
           </motion.div>
 
           {/* Battle Cry */}
-          <motion.div
-            className="mb-8"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.6 }}
-          >
-            <div className="inline-block bg-gradient-to-r from-primary-500 to-accent-500 rounded-2xl p-8 md:p-12 shadow-2xl">
-              <p className="text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-tight">
-                SKILLUPCYCLE!!!
-                <br />
-                EMPOWERING THE FUTURE!!!
-              </p>
-            </div>
-          </motion.div>
-
+          
           {/* Social Proof */}
           <motion.p
             className="text-gray-400"

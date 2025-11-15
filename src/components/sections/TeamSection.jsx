@@ -5,34 +5,48 @@ import { Card } from '../ui/Card';
 import { teamMembers } from '../../data/team';
 
 export const TeamSection = () => {
+  // Duplicate team members for seamless loop
+  const duplicatedMembers = [...teamMembers, ...teamMembers];
+
   return (
-    <section id="team" className="py-20 md:py-32 bg-gradient-to-br from-gray-50 to-white">
-      <div className="container mx-auto px-4">
+    <section id="team" className="py-20 md:py-32 bg-white overflow-hidden">
+      <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-4">
-            Meet the Team
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6">
+            Meet Our <span className="text-primary-600">Team</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Passionate individuals united by a common mission to transform education in Nigeria
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Passionate individuals united by a common mission to transform education and empower Nigerian youth
           </p>
         </motion.div>
 
-        {/* Team Grid */}
-        <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamMembers.map((member) => (
-            <motion.div
-              key={member.id}
-              variants={{
-                hidden: { opacity: 0, y: 50 },
-                visible: { opacity: 1, y: 0 }
-              }}
-            >
+        {/* Continuous Scroll Container */}
+        <div className="relative">
+          <motion.div
+            className="flex gap-8"
+            animate={{
+              x: [0, -100 * teamMembers.length / 2 + '%'],
+            }}
+            transition={{
+              x: {
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 30,
+                ease: "linear",
+              },
+            }}
+          >
+            {duplicatedMembers.map((member, index) => (
+              <div
+                key={`${member.id}-${index}`}
+                className="flex-shrink-0 w-80"
+              >
               <Card className="h-full group overflow-hidden">
                 {/* Image Container */}
                 <div className="relative mb-6 overflow-hidden rounded-xl bg-gradient-to-br from-primary-100 to-accent-100">
@@ -96,9 +110,10 @@ export const TeamSection = () => {
                   </div>
                 </div>
               </Card>
-            </motion.div>
-          ))}
-        </StaggerChildren>
+              </div>
+            ))}
+          </motion.div>
+        </div>
 
         {/* Team Statement */}
         <motion.div

@@ -53,9 +53,11 @@ export const Header = () => {
             onClick={() => scrollToSection('hero')}
             whileHover={{ scale: 1.05 }}
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">S</span>
-            </div>
+            <img 
+              src="/logo/SkillUpCycle_Logo.png" 
+              alt="SkillUpCycle Logo" 
+              className="h-10 w-auto"
+            />
             <span className="text-xl font-display font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
               SkillUpCycle
             </span>

@@ -80,7 +80,7 @@ export const StatsSection = () => {
           transition={{ delay: 0.5 }}
         >
           <p className="text-lg md:text-xl text-primary-100 max-w-3xl mx-auto leading-relaxed">
-            These aren't just numbers—they represent lives transformed, 
+            These aren't just numbers. They represent lives transformed, 
             communities empowered, and futures brightened.
           </p>
         </motion.div>
