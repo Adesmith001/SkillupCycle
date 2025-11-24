@@ -2,7 +2,7 @@ export const teamMembers = [
   {
     id: 1,
     name: "Toluwani",
-    role: "Co-Founder & Visionary",
+    role: "Co-Founder & Technical Lead",
     image: "/team/tolu.jpg",
     bio: "Passionate about bridging the education gap in rural Nigeria",
     scriptQuote: "Just like Martin Luther King... I had a dream.",
@@ -13,11 +13,11 @@ export const teamMembers = [
   },
   {
     id: 2,
-    name: "Peace",
-    role: "Co-Founder & Product Lead",
-    image: "/team/peace.jpg",
-    bio: "Dedicated to creating accessible learning solutions",
-    scriptQuote: "SkillUpCycle is not just an app...",
+    name: "Ayanfe",
+    role: "Creative Director, Script Writer, Visionary, Co-Founder",
+    image: "/team/ayanfe.jpg",
+    bio: "Crafting the narrative that brings our vision to life",
+    scriptQuote: "Telling stories that inspire change and empower futures",
     social: { linkedin: "#", twitter: "#" }
   },
   {
@@ -31,27 +31,27 @@ export const teamMembers = [
   },
   {
     id: 4,
-    name: "Femi",
-    role: "Technical Lead",
-    image: "/team/femi.jpg",
-    bio: "Building scalable solutions for education access",
+    name: "Peace",
+    role: "Co-Founder & Product Lead",
+    image: "/team/peace.jpg",
+    bio: "Dedicated to creating accessible learning solutions",
+    scriptQuote: "SkillUpCycle is not just an app...",
     social: { linkedin: "#", twitter: "#" }
   },
   {
     id: 5,
     name: "Faith",
-    role: "Operations & Strategy",
+    role: "Operations & Strategy Lead",
     image: "/team/faith.jpg",
     bio: "Ensuring sustainable impact in rural communities",
     social: { linkedin: "#", twitter: "#" }
   },
   {
     id: 6,
-    name: "Ayanfe",
-    role: "Creative Director & Script Writer",
-    image: "/team/ayanfe.jpg",
-    bio: "Crafting the narrative that brings our vision to life",
-    scriptQuote: "Telling stories that inspire change and empower futures",
+    name: "Femi",
+    role: "Assitant Creavitve Director & Script Writer",
+    image: "/team/femi.jpg",
+    bio: "Building scalable solutions for education access",
     social: { linkedin: "#", twitter: "#" }
   },
   {
