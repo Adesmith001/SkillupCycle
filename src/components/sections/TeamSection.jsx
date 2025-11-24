@@ -53,18 +53,17 @@ export const TeamSection = () => {
               >
               <Card className="h-full group overflow-hidden">
                 {/* Image Container */}
-                <div className="relative mb-6 overflow-hidden rounded-xl bg-gradient-to-br from-primary-100 to-accent-100">
-                  <div className="aspect-square flex items-center justify-center">
-                    {/* Placeholder for team member image */}
-                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-200 to-accent-200">
-                      <span className="text-6xl font-bold text-white">
-                        {member.name.charAt(0)}
-                      </span>
-                    </div>
+                <div className="relative mb-6 overflow-hidden rounded-xl">
+                  <div className="aspect-square">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   
                   {/* Overlay on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     {member.scriptQuote && (
                       <p className="text-white text-sm italic">
                         "{member.scriptQuote}"
@@ -125,16 +124,16 @@ export const TeamSection = () => {
               >
               <Card className="h-full group overflow-hidden">
                 {/* Image Container */}
-                <div className="relative mb-6 overflow-hidden rounded-xl bg-gradient-to-br from-primary-100 to-accent-100">
-                  <div className="aspect-square flex items-center justify-center">
-                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-200 to-accent-200">
-                      <span className="text-6xl font-bold text-white">
-                        {member.name.charAt(0)}
-                      </span>
-                    </div>
+                <div className="relative mb-6 overflow-hidden rounded-xl">
+                  <div className="aspect-square">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     {member.scriptQuote && (
                       <p className="text-white text-sm italic">
                         "{member.scriptQuote}"

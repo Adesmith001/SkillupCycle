@@ -3,7 +3,7 @@ export const teamMembers = [
     id: 1,
     name: "Toluwani",
     role: "Co-Founder & Visionary",
-    image: "/team/toluwani.jpg",
+    image: "/team/tolu.jpg",
     bio: "Passionate about bridging the education gap in rural Nigeria",
     scriptQuote: "Just like Martin Luther King... I had a dream.",
     social: {
@@ -52,6 +52,15 @@ export const teamMembers = [
     image: "/team/ayanfe.jpg",
     bio: "Crafting the narrative that brings our vision to life",
     scriptQuote: "Telling stories that inspire change and empower futures",
+    social: { linkedin: "#", twitter: "#" }
+  },
+  {
+    id: 7,
+    name: "Fikun",
+    role: "Community Ambassador",
+    image: "/team/fikun.jpg",
+    bio: "A passionate advocate for SkillUpCycle, featured in our story to share the impact",
+    scriptQuote: "I saw firsthand how this can change lives. It's more than just learning; it's hope.",
     social: { linkedin: "#", twitter: "#" }
   }
 ];
